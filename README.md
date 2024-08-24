@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Zoom Clone
+This project is built with Next.js and TypeScript, replicating the core features of Zoom, including secure login, meeting creation, and a variety of meeting controls like recording, screen sharing, and participant management.
 
-## Getting Started
+⚙️ Tech Stack
+Next.js
+TypeScript
+Clerk
+getstream
+shadcn
+Tailwind CSS
+🔋 Features
+Authentication: Secure login with Clerk, supporting social sign-on and email/password.
+New Meeting: Start meetings with configurable camera and microphone settings.
+Meeting Controls: Manage recordings, screen sharing, muting, layout, and participants.
+Exit Meeting: Leave or end meetings for all participants.
+Schedule Meetings: Plan future meetings with easy access via 'Upcoming Meetings.'
+Past Meetings: View details and recordings of previous meetings.
+Personal Room: Instant meetings via a unique, shareable link.
+Join via Link: Easily join meetings with a provided link.
+Secure Real-time Functionality: Ensures privacy and data integrity.
+Responsive Design: Optimized for all devices and screen sizes.
+🤸 Quick Start
+Prerequisites
+Ensure you have:
 
-First, run the development server:
+Git
+Node.js
+npm
+Setup
+Clone the Repository:
 
-```bash
+bash
+Copy code
+git clone https://github.com/MerchantKhalid/videoapp.git
+cd zoom-clone
+Install Dependencies:
+
+bash
+Copy code
+npm install
+Set Up Environment Variables: Create a .env file in the project root:
+
+plaintext
+Copy code
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+CLERK_SECRET_KEY=
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+NEXT_PUBLIC_STREAM_API_KEY=
+STREAM_SECRET_KEY=
+Replace placeholders with your Clerk and getstream credentials.
+
+Run the Project:
+
+bash
+Copy code
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Open http://localhost:3000 in your browser.
